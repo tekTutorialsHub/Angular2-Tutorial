@@ -1,0 +1,28 @@
+<h1> Hellp & Welcome to {{bankName}}. </h1>
+
+<h3> Interpolation Examples </h3>
+
+<b>Binding to a Property</b>    
+<p>{{ bankName}}</p>
+
+<b>Binding to a method</b>
+<p>{{getBankName()}}</p>
+
+<b>Perform some simple calculation</b> 
+<p>{{ 'Hello & Welcome to '+ ' ABC Bank '}}</p>
+<p>{{100*80}}</p> 
+<p style.color={{color}}>This is red</p>
+
+<h3> Property Binding </h3>
+
+<p [innerText]="bankName"></p>
+<p [style.color]="color">This is red</p>
+
+<h3> Event Binding </h3>
+
+<button (click)='buttonClicked()'>Click Me</button>
+<p> Button Clicked {{count}} Times </p> 
+
+<h3> Two Bay Binding </h3>
+Enter your Name : <input type='text' [(ngModel)]='name' />
+You have entered {{name}}
