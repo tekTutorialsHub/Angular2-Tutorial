@@ -9,13 +9,18 @@
 <p>{{getBankName()}}</p>
 
 <b>Perform some simple calculation</b> 
-<p>{{ 'Hello & Welcome to '+ ' ABC Bank '}}</p>
 <p>{{100*80}}</p> 
+<p>{{ 'Hello & Welcome to '+ ' ABC Bank '}}</p>
+<p>{{ 'Hello & Welcome to '+' ABC Bank'}}</p>
+
 <p style.color={{color}}>This is red</p>
 
 <h3> Property Binding </h3>
 
 <p [innerText]="bankName"></p>
+<p [innerText]="getBankName()"></p>
+<p [innerText]="'Hello & Welcome to '+ ' ABC Bank '"></p>
+<p [innerText]="100*80"></p>
 <p [style.color]="color">This is red</p>
 
 <h3> Event Binding </h3>
