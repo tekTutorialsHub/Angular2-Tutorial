@@ -1,14 +1,14 @@
-import { ComponentsPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('components App', function() {
-  let page: ComponentsPage;
+describe('angular4 App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new ComponentsPage();
+    page = new AppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });

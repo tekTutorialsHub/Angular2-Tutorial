@@ -1,27 +1,40 @@
-<h1> Hellp & Welcome to {{bankName}}. </h1>
+<h1> {{title}}</h1>
 
 <h3> Interpolation Examples </h3>
 
 <b>Binding to a Property</b>    
-<p>{{ bankName}}</p>
+
+<p>{{title}}</p>
+<p innerText={{title}}></p>
 
 <b>Binding to a method</b>
-<p>{{getBankName()}}</p>
+<p>{{getTitle()}}</p>
 
 <b>Perform some simple calculation</b> 
+<p>{{ 'Hello & Welcome to '+ ' Angular Data binding '}}</p>
 <p>{{100*80}}</p> 
-<p>{{ 'Hello & Welcome to '+ ' ABC Bank '}}</p>
-<p>{{ 'Hello & Welcome to '+' ABC Bank'}}</p>
-
 <p style.color={{color}}>This is red</p>
+
+<p><input id={{inputId}} type={{inputType}} name={{inputName}} value={{inputValue}} placeholder={{inputPlaceHolder}}> </p>
+
 
 <h3> Property Binding </h3>
 
-<p [innerText]="bankName"></p>
-<p [innerText]="getBankName()"></p>
-<p [innerText]="'Hello & Welcome to '+ ' ABC Bank '"></p>
+
+<h1 [innerText]="title"></h1>
+<p [innerText]="title"></p>
+<p [innerText]="getTitle()"></p>
+<p [innerText]="'Hello & Welcome to '+ ' Angular Data binding '"></p>
 <p [innerText]="100*80"></p>
+
+
+<h4> Binding to Style binding </h4>
 <p [style.color]="color">This is red</p>
+
+<h4> input box </h4>
+<p><input [id]="inputId" [type]="inputType" [name]="inputName" [value]="inputValue" [placeholder]="inputPlaceHolder"> </p>
+
+
 
 <h3> Event Binding </h3>
 

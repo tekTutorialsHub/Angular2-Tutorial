@@ -7,17 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-      bankName: string = 'ABC Bank Ltd' ;
-      count: number= 0;
-      name: string= '';
-      color: string= 'red';
+  title= 'Data Binding in Angular';
 
-      getBankName(): string {
-        return this.bankName;
-      }
+  count= 0;
+  name= '';
+  color= 'red';
 
-      buttonClicked(): void {
-        this.count = this.count + 1;
-        console.log('Button Clicked')
-      }
+  inputId= 'id1';
+  inputType= 'text';
+  inputName= 'name';
+  inputValue = 'value';
+  inputPlaceHolder= 'Please enter name';
+
+  getTitle(): string {
+    return this.title;
+  }
+
+  buttonClicked(): void {
+    this.count = this.count + 1;
+    console.log('Button Clicked');
+  }
+
+
 }
