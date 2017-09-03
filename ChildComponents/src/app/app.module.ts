@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import {CustomerListComponent} from './customer/customer-list.component';
+import {CustomerListComponent} from './customer-list.component';
 
 @NgModule({
   declarations: [
